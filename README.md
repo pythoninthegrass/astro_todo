@@ -1,48 +1,56 @@
-# Astro Framework Todo App
+# astro_todo
 
-This project is a Todo application built with Astro Framework. This application allows users to create, edit, and delete their todo list items. The design is created using SASS CSS preprocessor.
+> This project is a TODO application built with Astro Framework. 
+> 
+> This application allows users to create, edit, and delete their TODO list items. The design is created using SASS CSS preprocessor.
 
 ## Features
+* **CRUD**
+  * Create TODO List: Users can add a new TODO item to their list
+  * Edit TODOs: Users can edit existing TODO items and save the changes
+  * Delete TODOs: Users can delete TODO items from the list
+  * Save TODOs: User's changes are saved in browser cookies, allowing them to see their todos on subsequent visits
 
-- Create Todo List: Users can add a new todo item to their list.
-- Edit Todos: Users can edit existing todo items and save the changes.
-- Delete Todos: Users can delete todo items from the list.
-- Save Todos: User's changes are saved in browser cookies, allowing them to see their todos on subsequent visits.
+## Install
+* [bun](https://bun.sh/docs)  
+    `curl -fsSL https://bun.sh/install | bash`
+* [asdf (optional)](https://asdf-vm.com/guide/getting-started.html)
+  * Can be used to install `bun`
+    ```bash
+    asdf plugin add bun
+    asdf install bun 1.0.4
+    ```
 
-## Installation
+## Setup
+1. Clone project
+    ```bash
+    git clone https://github.com/TamperMonkeyUpp/Astro-Todo-App.git
+    ```
+2. Navigate to the project folder and open a terminal
+    ```bash
+    cd astro_todo
+    ``` 
+3. Install the necessary dependencies
+    ```bash
+    bun install
+    ```
+4. Start the application
+    ```bash
+    bun run dev
+    ```
+5. Open your browser and go to `http://localhost:4321/` to start using the TODO app
 
-1. Clone or download this project.
-   ```bash
-      git clone https://github.com/TamperMonkeyUpp/Astro-Todo-App.git
-   ```
-3. Navigate to the project folder and open a terminal.
-  ```bash
-    cd Astro-Todo-App
-  ``` 
-4. Run the following command to install the necessary dependencies:
-   ```bash
-      npm install
-   ```
-5. Run the following command to start the application:
-   ```bash
-      npm run dev
-   ```
-   5. Open your browser and go to `http://localhost:4321/` to start using the Todo app.
+## TODO (heh)
+* Fix edit function (maybe. see: FastAPI)
+  * Update doesn't _actually_ update -- it overwrites original title and description 
+* Migrate API to FastAPI
+* Gussy up a bit
+  * Color scheme
+  * Font
+  * Size (viewport)
+  * Preview description
 
-## Technologies Used
+## Further Reading
+[EralKeskinkurt/Astro-Todo-App [inspo! 🙏]](https://github.com/EralKeskinkurt/Astro-Todo-App)
 
-- Astro Framework: A framework for building static sites.
-- SASS: A CSS preprocessor that allows writing CSS in a more organized and modular way.
-- JavaScript: The programming language used to provide functionality to the application.
-- React : A framework for building components
-
-## Contributing
-
-If you find any issues or would like to add new features to the application, please open an issue or submit a pull request. We welcome all contributions!
-
-## License
-
-###### This project is licensed under the MIT License. For more information, please see the `LICENSE` file.
-
----
-
+[Bun Docs](https://bun.sh/docs)
